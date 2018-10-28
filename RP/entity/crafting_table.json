@@ -10,7 +10,7 @@
         "default": "textures/entity/crafting_table"
       },
       "geometry": {
-        "default": "geometry.shulker"
+        "default": "geometry.crafting_table"
       },
       "render_controllers": [ "controller.render.crafting_table" ],
       "spawn_egg": {
