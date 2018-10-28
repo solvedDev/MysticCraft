@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0-beta.1",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "solved:crafting_table",
+      "materials": {
+        "default": "shulker"
+      },
+      "textures": {
+        "default": "textures/entity/crafting_table"
+      },
+      "geometry": {
+        "default": "geometry.shulker"
+      },
+      "render_controllers": [ "controller.render.crafting_table" ],
+      "spawn_egg": {
+        "base_color": "#BC9862",
+        "overlay_color": "#695433"
+      }
+    }
+  }
+}

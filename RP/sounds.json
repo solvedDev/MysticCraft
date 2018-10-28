@@ -1,0 +1,67 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "minecon:spider_illager": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "cast.spell": "mob.evocation_illager.cast_spell",
+          "prepare.summon": "mob.evocation_illager.prepare_summon",
+           "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "minecon:vile_spider": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },      
+      "minecon:scorpion": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "minecon:skeletaur": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "death": "mob.skeleton.death",
+          "step": {
+            "sound": "mob.skeleton.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      }
+    }
+  }
+}
