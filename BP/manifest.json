@@ -8,7 +8,6 @@
     },
     "modules": [
         {
-            "description": "resourcePack.minecon_server.description",
             "type": "data",
 			"uuid": "fd944fb5-00a3-416b-ac1c-a79284055f3c",
             "version": [1, 8, 0]
