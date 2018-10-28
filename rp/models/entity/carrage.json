@@ -1,9 +1,5 @@
 {
-	"credit": "Made with Blockbench",
-	"textures": {
-		"0": "taaseen/carrage",
-		"particle": "taaseen/carrage"
-	},
+	
 	"elements": [
 		{
 			"name": "front",
