@@ -2,8 +2,8 @@
   "format_version": "1.8.0-beta.1",
   "minecraft:entity": {
     "description": {
-      "identifier": "solved:crafting_table",
-      "minecraft:runtime_identifier" : {
+      "identifier": "mystic:crafting_table",
+      "minecraft:runtime_identifier": {
         "id": "minecraft:shulker"
       },
       "minecraft:spawn_egg": {
@@ -25,14 +25,13 @@
         }
       },
       "solved:shake": {
-        "minecraft:is_shaking": {
-        }
+        "minecraft:is_shaking": {}
       }
     },
 
     "components": {
       "minecraft:type_family": {
-        "family": [ "crafting_table" ]
+        "family": ["crafting_table"]
       },
       "minecraft:collision_box": {
         "height": 1.0,
@@ -53,24 +52,35 @@
           "position": [0, 0, 0]
         }
       },
-      "minecraft:environment_sensor": [
-        {
+      "minecraft:environment_sensor": [{
           "on_environment": {
-            "filters": { "test": "has_component", "subject": "target", "value": "minecraft:timer" },
+            "filters": {
+              "test": "has_component",
+              "subject": "target",
+              "value": "minecraft:timer"
+            },
             "event": "solved:on_shake"
           }
         },
         {
           "on_environment": {
-            "filters": { "test": "has_component", "subject": "target", "operator": "not", "value": "minecraft:timer" },
+            "filters": {
+              "test": "has_component",
+              "subject": "target",
+              "operator": "not",
+              "value": "minecraft:timer"
+            },
             "event": "solved:on_remove_shake"
           }
         }
       ],
-      "minecraft:damage_sensor": [
-        {
+      "minecraft:damage_sensor": [{
           "on_damage": {
-            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
             "event": "solved:on_die"
           },
           "deals_damage": false
@@ -84,20 +94,17 @@
         "priority": 0,
         "within_radius": 1,
         "reselect_targets": false,
-        "entity_types": [
-          {
-            "filters": {
-              "test": "is_family",
-              "subject": "other",
-              "value": "crafting_table_internal"
-            },
-            "max_dist": 1
-          }
-        ],
+        "entity_types": [{
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "crafting_table_internal"
+          },
+          "max_dist": 1
+        }],
         "must_see": false
       },
-      "minecraft:physics": {
-      }
+      "minecraft:physics": {}
     },
 
     "events": {
