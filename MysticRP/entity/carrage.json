@@ -4,18 +4,18 @@
     "description": {
       "identifier": "mystic:carrage",
       "materials": {
-        "default": "shulker"
+        "default": "carrage"
       },
       "textures": {
-        "default": "textures/entity/crafting_table"
+        "default": "textures/entity/carrage"
       },
       "geometry": {
-        "default": "geometry.crafting_table"
+        "default": "geometry.carrage"
       },
-      "render_controllers": [ "controller.render.crafting_table" ],
+      "render_controllers": [ "controller.render.carrage" ],
       "spawn_egg": {
-        "base_color": "#BC9862",
-        "overlay_color": "#695433"
+        "texture": "mysticcraft_egg",
+        "texture_index": 1
       }
     }
   }

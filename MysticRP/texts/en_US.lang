@@ -2,3 +2,13 @@
 ##
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
+
+## Spawn Eggs
+
+item.spawn_egg.entity.mystic:crafting_table.name=Custom Crafting Table
+item.spawn_egg.entity.mystic:carrage.name=Carrage
+
+## Entities
+
+entity.mystic:crafting_table.name=Custom Crafting Table
+entity.mystic:carrage.name=Carrage

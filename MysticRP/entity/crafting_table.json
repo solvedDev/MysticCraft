@@ -4,7 +4,7 @@
     "description": {
       "identifier": "mystic:crafting_table",
       "materials": {
-        "default": "shulker"
+        "default": "crafting_table"
       },
       "textures": {
         "default": "textures/entity/crafting_table"
@@ -14,8 +14,8 @@
       },
       "render_controllers": [ "controller.render.crafting_table" ],
       "spawn_egg": {
-        "base_color": "#BC9862",
-        "overlay_color": "#695433"
+        "texture": "mysticcraft_egg",
+        "texture_index": 0
       }
     }
   }
