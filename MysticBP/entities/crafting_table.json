@@ -42,7 +42,7 @@
       },
 
       "minecraft:addrider": {
-        "entity_type": "solved:crafting_table_internal"
+        "entity_type": "mystic:crafting_table_internal"
       },
       "minecraft:rideable": {
         "family_types": ["crafting_table_internal"],

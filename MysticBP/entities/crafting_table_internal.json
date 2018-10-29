@@ -3,9 +3,6 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "mystic:crafting_table_internal",
-			"minecraft:runtime_identifier": {
-				"id": "minecraft:villager"
-			},
 			"minecraft:spawn_egg": {
 				"value": false
 			},
@@ -53,8 +50,8 @@
 				"width": 1.0
 			},
 			"minecraft:trade_table": {
-				"display_name": "entity.villager.shepherd",
-				"table": "trading/shepherd_trades.json"
+				"display_name": "entity.mysticcraft.customcrafting",
+				"table": "trading/custom_crafting_table.json"
 			},
 			"minecraft:behavior.trade_with_player": {
 				"priority": 1
