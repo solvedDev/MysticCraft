@@ -1,0 +1,105 @@
+{
+  "format_version": "1.8.0-beta.1",
+  "minecraft:entity": {
+
+    "description": {
+      "identifier": "mystic:raven",
+      "minecraft:spawn_egg": {
+        "value": true
+      },
+      "minecraft:is_summonable": {
+        "value": true
+      },
+      "minecraft:is_experimental": {
+        "value": true
+      }
+    },
+
+    "component_groups": {
+
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "raven" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/raven.json"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesAir": true,
+        "breathesWater": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.5
+      },
+      "minecraft:movement": {
+        "value": 1.8
+      },
+      "minecraft:movement.glide": {
+        "start_speed": 0.1,
+        "speed_when_turning": 0.2
+      },
+      "minecraft:follow_range": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 0,
+        "max_dist": 16.0,
+        "ignore_visibility": true,
+        "entity_types": [
+          {
+            "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "ocelot"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "cat"}
+                ]
+            },
+            "max_dist": 16,
+            "walk_speed_multiplier": 1,
+            "sprint_speed_multiplier": 1
+          }
+        ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 8,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": false,
+        "must_see_forget_duration": 0.5,
+        "scan_interval": 20,
+        "target_search_height": 80.0
+      },
+      "minecraft:behavior.swoop_attack": {
+        "priority": 2,
+        "delay_range": [ 10.0, 20.0 ]
+      }
+    }
+  }
+}
