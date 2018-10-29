@@ -10,7 +10,7 @@
         "default": "textures/entity/crafting_table"
       },
       "geometry": {
-        "default": "geometry.crafting_table"
+        "default": "geometry.carrage"
       },
       "render_controllers": [ "controller.render.crafting_table" ],
       "spawn_egg": {
