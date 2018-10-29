@@ -7,7 +7,7 @@
 
 item.spawn_egg.entity.mystic:crafting_table.name=Custom Crafting Table
 item.spawn_egg.entity.mystic:carrage.name=Carrage
-item.spawn_egg.entity.raven:carrage.name=Spawn Raven
+item.spawn_egg.entity.mystic:raven.name=Spawn Raven
 
 ## Entities
 
