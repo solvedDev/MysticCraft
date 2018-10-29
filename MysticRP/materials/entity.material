@@ -2,6 +2,7 @@
   "materials": {
     "version": "1.0.0",
 	"crafting_table:entity": {},
-	"carrage:entity": {}
+	"carrage:entity": {},
+	"raven:entity": {}
   }
 }
