@@ -32,9 +32,6 @@
         "value": 6,
         "max": 6
       },
-      "minecraft:physics": {
-        "has_gravity": true
-      },
       "minecraft:attack": {
         "damage": 2
       },
@@ -45,19 +42,11 @@
         "breathesWater": false
       },
       "minecraft:collision_box": {
-        "width": 0.9,
+        "width": 0.5,
         "height": 0.5
       },
       "minecraft:movement": {
-        "value": 1.8
-      },
-      "minecraft:movement.glide": {
-        "start_speed": 0.1,
-        "speed_when_turning": 0.2
-      },
-      "minecraft:follow_range": {
-        "value": 8,
-        "max": 8
+        "value": 1.2
       },
       "minecraft:behavior.avoid_mob_type": {
         "priority": 0,
@@ -77,9 +66,44 @@
           }
         ]
       },
+	  "minecraft:jump.static": {
+      },
+      "minecraft:can_fly": {
+        "value": true
+      },
+	  "minecraft:fall_damage": {
+        "value": 0.0
+      },
+	  "minecraft:behavior.swoop_attack": {
+        "priority": 0,
+        "delay_range": [ 2.5, 7.5 ]
+      },
+	  "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+	  "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+	  "minecraft:navigation.fly": {
+        "can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.fly": {
+      },
+      "minecraft:physics": {
+      },
+	  "minecraft:behavior.float": {
+        "priority": 0
+      },
+	  "minecraft:behavior.look_at_player": {
+        "priority": 1,
+        "look_distance": 8.0
+      },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 1,
-        "within_radius": 8,
+        "within_radius": 16,
         "reselect_targets": true,
         "entity_types": [
           {
@@ -88,17 +112,13 @@
               "subject": "other",
               "value": "player"
             },
-            "max_dist": 16
+            "max_dist": 32
           }
         ],
         "must_see": false,
         "must_see_forget_duration": 0.5,
         "scan_interval": 20,
         "target_search_height": 80.0
-      },
-      "minecraft:behavior.swoop_attack": {
-        "priority": 2,
-        "delay_range": [ 10.0, 20.0 ]
       }
     }
   }
