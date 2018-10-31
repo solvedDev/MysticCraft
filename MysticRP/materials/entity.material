@@ -3,6 +3,10 @@
     "version": "1.0.0",
 	"crafting_table:entity": {},
 	"carrage:entity": {},
-	"raven:entity": {}
+	"raven:entity": {},
+	"axolotl:entity": {
+      "+states": [ "Blending" ],
+      "blendDst": "One"
+	}
   }
 }
