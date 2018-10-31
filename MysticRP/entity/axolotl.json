@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0-beta.1",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mystic:axolotl",
+      "materials": {
+        "default": "axolotl"
+      },
+      "textures": {
+        "default": "textures/entity/axolotl_water"
+      },
+      "geometry": {
+        "default": "geometry.axolotl"
+      },
+      "render_controllers": [ "controller.render.axolotl" ],
+      "spawn_egg": {
+        "base_color": "#42e5f4",
+        "overlay_color": "#278ddb"
+      }
+    }
+  }
+}

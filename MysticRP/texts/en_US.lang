@@ -8,9 +8,11 @@
 item.spawn_egg.entity.mystic:crafting_table.name=Custom Crafting Table
 item.spawn_egg.entity.mystic:carrage.name=Carrage
 item.spawn_egg.entity.mystic:raven.name=Spawn Raven
+item.spawn_egg.entity.mystic:axolotl.name=Spawn Axolotl
 
 ## Entities
 
 entity.mystic:crafting_table.name=Custom Crafting Table
 entity.mystic:carrage.name=Carrage
 entity.mystic:raven.name=Raven
+entity.mystic:axolotl.name=Axolotl
