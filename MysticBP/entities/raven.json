@@ -24,7 +24,7 @@
         "family": [ "raven" ]
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/raven.json"
+        "table": "loot_tables/mystic/raven.json"
       },
       "minecraft:nameable": {
       },
