@@ -16,7 +16,16 @@
     },
 
     "component_groups": {
-
+	  "minecraft:default_texture": {
+	    "minecraft:variant": {
+          "value": 0
+        }
+      },
+	  "minecraft:water_texture": {
+	    "minecraft:variant": {
+          "value": 1
+        }
+      }
     },
 
     "components": {
@@ -37,6 +46,52 @@
         "height": 0.75
       },
       "minecraft:physics": {
+      },
+	  "minecraft:environment_sensor": [
+        {
+          "filters": {
+            "test": "in_water_or_rain",
+            "subject": "self",
+            "operator": "==",
+            "value": false
+          },
+          "event": "minecraft:default_texture"
+        },
+		{
+          "filters": {
+            "test": "in_water_or_rain",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          },
+          "event": "minecraft:water_texture"
+        }
+      ]
+    },
+	"events": {
+      "minecraft:water_texture": {
+        "remove": {
+          "component_groups": [
+		    "minecraft:default_texture"
+	      ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:water_texture"
+          ]
+        }
+      },
+	  "minecraft:default_texture": {
+        "remove": {
+          "component_groups": [
+		    "minecraft:water_texture"
+	      ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:default_texture"
+          ]
+        }
       }
     }
   }

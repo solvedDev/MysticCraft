@@ -4,10 +4,12 @@
     "description": {
       "identifier": "mystic:axolotl",
       "materials": {
-        "default": "axolotl"
+        "default": "axolotl",
+		"water": "axolotl_water"
       },
       "textures": {
-        "default": "textures/entity/axolotl_water"
+        "default": "textures/entity/axolotl",
+		"water": "textures/entity/axolotl_water"
       },
       "geometry": {
         "default": "geometry.axolotl"

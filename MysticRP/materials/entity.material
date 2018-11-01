@@ -4,9 +4,9 @@
 	"crafting_table:entity": {},
 	"carrage:entity": {},
 	"raven:entity": {},
-	"axolotl:entity": {
-      "+states": [ "Blending" ],
-      "blendDst": "One"
+	"axolotl:entity_alphatest": {},
+	"axolotl_water:entity": {
+	  "+states": [ "Blending" ]
 	}
   }
 }
