@@ -86,6 +86,33 @@
 				"table": "loot_tables/entities/llama.json"
 			},
 
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 16
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "rabbit"
+								}
+							]
+						},
+						"max_dist": 16
+					}
+				],
+				"must_see": true
+			},
 			"minecraft:behavior.float": {
         		"priority": 0
 			},
