@@ -14,7 +14,38 @@
 			}
 		},
 		"component_groups": {
-			
+			"mystic:ranged_attacker": {
+				"minecraft:behavior.panic": {
+					"priority": 3,
+					"speed_multiplier": 1.2
+				},
+				"minecraft:behavior.ranged_attack": {
+					"attack_interval_min": 1,
+					"attack_interval_max": 3,
+					"attack_radius": 15
+				},
+				"minecraft:shooter": {
+					"type": "Arrow",
+					"def": "minecraft:arrow"
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/mystic/gear/centaur_ranged.json"
+				}
+			},
+			"mystic:melee_attacker": {
+				"minecraft:behavior.melee_attack": {
+					"priority": 4,
+					"target_dist": 1.2,
+					"speed_multiplier": 1.25,
+					"track_target": true
+				},
+				"minecraft:attack": {
+					"damage": 3
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/mystic/gear/centaur_melee.json"
+				}
+			}
 		},
 
 		"components": {
@@ -22,13 +53,79 @@
 				"family": [ "centaur" ]
 			},
 			"minecraft:collision_box": {
-				"height": 1.0,
-				"width": 1.0
+				"height": 2.2,
+				"width": 0.9
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:nameable": {
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 17, 
+					"range_max": 34
+				}
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {
+			},
+			"minecraft:jump.static": {
+			},
+			"minecraft:nameable": {
+      		},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/llama.json"
+			},
+
+			"minecraft:behavior.float": {
+        		"priority": 0
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.7
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6.0,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+			"minecraft:physics": {
 			}
 		},
 
 		"events": {
-			
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"mystic:ranged_attacker"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"mystic:melee_attacker"
+							]
+						}
+					}
+				]
+			}
 		}
 	}
 }

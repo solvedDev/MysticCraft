@@ -6,15 +6,15 @@
         "textures": {
           "Array.variants": [
             "Texture.centaur_autumn",
-			      "Texture.centaur_blue",
-			      "Texture.centaur_red",
-			      "Texture.centaur_purple"
+            "Texture.centaur_blue",
+            "Texture.centaur_red",
+            "Texture.centaur_purple"
           ]
         }
       },
       "geometry": "Geometry.default",
       "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Array.variants[Entity.Variant]" ]
+      "textures": [ "Texture.centaur_autumn" ]
     }
   }
 }

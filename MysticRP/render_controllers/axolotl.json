@@ -18,9 +18,9 @@
       },
       "geometry": "Geometry.default",
       "materials": [{
-        "*": "Array.materials[Entity.Variant]"
+        "*": "Material.water"
       }],
-      "textures": ["Array.variants[Entity.Variant]"]
+      "textures": ["Texture.water"]
     }
   }
 }
