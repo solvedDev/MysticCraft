@@ -8,24 +8,26 @@
       },
       "textures": {
         "centaur_autumn": "textures/entity/centaur_autumn",
-		"centaur_blue": "textures/entity/centaur_blue",
-		"centaur_purple": "textures/entity/centaur_purple",
-		"centaur_red": "textures/entity/centaur_red"
+        "centaur_blue": "textures/entity/centaur_blue",
+        "centaur_purple": "textures/entity/centaur_purple",
+        "centaur_red": "textures/entity/centaur_red"
       },
       "geometry": {
         "default": "geometry.mob_centaur"
       },
-	  "animations": {
+      "animations": {
         "setup": "animation.llama.setup",
         "walk": "animation.quadruped.walk",
         "look_at_target": "animation.common.look_at_target"
       },
-      "animation_controllers": [
-        { "move": "controller.animation.llama.move" }
-      ],
-      "render_controllers": [ "controller.render.centaur" ],
-	  "locators": {
-        "lead": { "head": [ 0.0, 18.0, -11.0 ] }
+      "animation_controllers": [{
+        "move": "controller.animation.llama.move"
+      }],
+      "render_controllers": ["controller.render.centaur"],
+      "locators": {
+        "lead": {
+          "head": [0.0, 18.0, -11.0]
+        }
       },
       "spawn_egg": {
         "base_color": "#5c5959",
