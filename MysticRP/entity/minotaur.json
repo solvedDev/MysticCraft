@@ -4,7 +4,7 @@
     "description": {
       "identifier": "mystic:minotaur",
       "materials": {
-        "default": "raven"
+        "default": "minotaur"
       },
       "textures": {
         "default": "textures/entity/minotaur"
@@ -12,7 +12,7 @@
       "geometry": {
         "default": "geometry.mob_minotaur"
       },
-      "render_controllers": [ "controller.render.zombie" ],
+      "render_controllers": [ "controller.render.minotaur" ],
 	  "locators": {
         "lead": { "head": [0.5, 6, -2.83333] }
       },

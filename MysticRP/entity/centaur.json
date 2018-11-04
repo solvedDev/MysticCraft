@@ -4,7 +4,7 @@
     "description": {
       "identifier": "mystic:centaur",
       "materials": {
-        "default": "raven"
+        "default": "centaur"
       },
       "textures": {
         "centaur_autumn": "textures/entity/centaur_autumn",
@@ -15,9 +15,17 @@
       "geometry": {
         "default": "geometry.mob_centaur"
       },
-      "render_controllers": [ "controller.render.horse" ],
+	  "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.centaur" ],
 	  "locators": {
-        "lead": { "head": [0.5, 6, -2.83333] }
+        "lead": { "head": [ 0.0, 18.0, -11.0 ] }
       },
       "spawn_egg": {
         "base_color": "#5c5959",
