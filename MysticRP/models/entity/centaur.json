@@ -72,8 +72,8 @@
 			},
 			{
 				"name": "rightItem",
-				"pivot": [ -6, 15, 1 ],
-				"neverRender": false,
+				"pivot": [ -6, 15.0, 1.0 ],
+				"neverRender": true,
 				"parent": "rightArm"
 			},
 			{
@@ -88,7 +88,7 @@
 			{
 				"name": "leftItem",
 				"pivot": [ 6.0, 15.0, 1.0 ],
-				"neverRender": false,
+				"neverRender": true,
 				"parent": "leftArm"
 			}
 		]

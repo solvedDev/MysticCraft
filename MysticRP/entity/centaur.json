@@ -16,14 +16,16 @@
         "default": "geometry.mob_centaur"
       },
       "animations": {
-        "setup": "animation.llama.setup",
-        "walk": "animation.quadruped.walk",
+        "setup": "animation.centaur.setup",
+        "walk": "animation.centaur.walk",
+        "attack": "animation.vindicator.attack",
         "look_at_target": "animation.common.look_at_target"
       },
       "animation_controllers": [{
-        "move": "controller.animation.llama.move"
+        "move": "controller.animation.centaur.move"
       }],
       "render_controllers": ["controller.render.centaur"],
+      "enable_attachables": true,
       "locators": {
         "lead": {
           "head": [0.0, 18.0, -11.0]

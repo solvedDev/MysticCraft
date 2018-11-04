@@ -6,7 +6,7 @@
 		"carrage:entity": {},
 		"raven:entity": {},
 		"minotaur:entity": {},
-		"centaur:entity": {},
+		"centaur:entity_alphatest": {},
 		"axolotl:entity_alphatest": {},
 		"axolotl_water:entity": {
 	  	"+states": [ "Blending" ]
