@@ -6,19 +6,21 @@
         "textures": {
           "Array.variants": [
             "Texture.default",
-			"Texture.water"
+            "Texture.water"
           ]
         },
-		"materials": {
+        "materials": {
           "Array.materials": [
-		    "Material.default",
-		    "Material.water"
-		  ]
+            "Material.default",
+            "Material.water"
+          ]
         }
       },
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Array.materials[Entity.Variant]" } ],
-      "textures": [ "Array.variants[Entity.Variant]" ]
+      "materials": [{
+        "*": "Array.materials[Entity.Variant]"
+      }],
+      "textures": ["Array.variants[Entity.Variant]"]
     }
   }
 }
