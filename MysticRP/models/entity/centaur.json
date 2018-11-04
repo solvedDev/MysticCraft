@@ -23,16 +23,16 @@
 			},
 			{
 				"name": "leg1",
-				"pivot": [3.5, 14, 6],
+				"pivot": [-3.5, 14, -5],
 				"cubes": [
-					{"origin": [1.5, 0, 4], "size": [4, 14, 4], "uv": [64, 28]}
+					{"origin": [-5.5, 0, -7], "size": [4, 14, 4], "uv": [32, 46]}
 				]
 			},
 			{
 				"name": "leg2",
-				"pivot": [-3.5, 14, -5],
+				"pivot": [3.5, 14, 6],
 				"cubes": [
-					{"origin": [-5.5, 0, -7], "size": [4, 14, 4], "uv": [32, 46]}
+					{"origin": [1.5, 0, 4], "size": [4, 14, 4], "uv": [64, 28]}
 				]
 			},
 			{
@@ -63,7 +63,7 @@
 				]
 			},
 			{
-				"name": "villagerightArm",
+				"name": "rightArm",
 				"pivot": [-5, 22, 0],
 				"reset": true,
 				"cubes": [
@@ -71,13 +71,25 @@
 				]
 			},
 			{
-				"name": "villageleftArm",
+				"name": "rightItem",
+				"pivot": [ -6, 15, 1 ],
+				"neverRender": false,
+				"parent": "rightArm"
+			},
+			{
+				"name": "leftArm",
 				"pivot": [5, 22, 0],
 				"reset": true,
 				"mirror": true,
 				"cubes": [
 					{"origin": [4, 20, -9], "size": [4, 12, 4], "uv": [16, 64]}
 				]
+			},
+			{
+				"name": "leftItem",
+				"pivot": [ 6.0, 15.0, 1.0 ],
+				"neverRender": false,
+				"parent": "leftArm"
 			}
 		]
 	}
