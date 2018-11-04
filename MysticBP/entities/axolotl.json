@@ -16,13 +16,13 @@
     },
 
     "component_groups": {
-	  "minecraft:default_texture": {
-	    "minecraft:variant": {
+      "minecraft:default_texture": {
+        "minecraft:variant": {
           "value": 0
         }
       },
-	  "minecraft:water_texture": {
-	    "minecraft:variant": {
+      "minecraft:water_texture": {
+        "minecraft:variant": {
           "value": 1
         }
       }
@@ -30,13 +30,12 @@
 
     "components": {
       "minecraft:type_family": {
-        "family": [ "axolotl" ]
+        "family": ["axolotl"]
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/axolotl.json"
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 5,
         "max": 5
@@ -45,10 +44,8 @@
         "width": 1.5,
         "height": 0.75
       },
-      "minecraft:physics": {
-      },
-	  "minecraft:environment_sensor": [
-        {
+      "minecraft:physics": {},
+      "minecraft:environment_sensor": [{
           "filters": {
             "test": "in_water_or_rain",
             "subject": "self",
@@ -57,7 +54,7 @@
           },
           "event": "minecraft:default_texture"
         },
-		{
+        {
           "filters": {
             "test": "in_water_or_rain",
             "subject": "self",
@@ -68,12 +65,12 @@
         }
       ]
     },
-	"events": {
+    "events": {
       "minecraft:water_texture": {
         "remove": {
           "component_groups": [
-		    "minecraft:default_texture"
-	      ]
+            "minecraft:default_texture"
+          ]
         },
         "add": {
           "component_groups": [
@@ -81,11 +78,11 @@
           ]
         }
       },
-	  "minecraft:default_texture": {
+      "minecraft:default_texture": {
         "remove": {
           "component_groups": [
-		    "minecraft:water_texture"
-	      ]
+            "minecraft:water_texture"
+          ]
         },
         "add": {
           "component_groups": [
