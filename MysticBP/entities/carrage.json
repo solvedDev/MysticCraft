@@ -4,7 +4,7 @@
 
     "description": {
       "identifier": "mystic:carrage",
-	  "is_spawnable": true,
+      "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": true
     },
@@ -15,13 +15,12 @@
 
     "components": {
       "minecraft:type_family": {
-        "family": [ "carrage" ]
+        "family": ["carrage"]
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/carrage.json"
       },
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": 5,
         "max": 5
@@ -30,8 +29,7 @@
         "width": 1.5,
         "height": 0.75
       },
-      "minecraft:physics": {
-      }
+      "minecraft:physics": {}
     }
   }
 }

@@ -4,16 +4,16 @@
 		"description": {
 			"identifier": "mystic:minotaur",
 			"is_spawnable": true,
-      "is_summonable": true,
-      "is_experimental": true
+			"is_summonable": true,
+			"is_experimental": true
 		},
 		"component_groups": {
-			
+
 		},
 
 		"components": {
 			"minecraft:type_family": {
-				"family": [ "centaur" ]
+				"family": ["centaur"]
 			},
 			"minecraft:collision_box": {
 				"height": 1.0,
@@ -22,7 +22,7 @@
 		},
 
 		"events": {
-			
+
 		}
 	}
 }

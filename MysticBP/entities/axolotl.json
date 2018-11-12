@@ -10,12 +10,12 @@
     },
 
     "component_groups": {
-      "minecraft:default_texture": {
+      "mystic:default_texture": {
         "minecraft:variant": {
           "value": 0
         }
       },
-      "minecraft:water_texture": {
+      "mystic:water_texture": {
         "minecraft:variant": {
           "value": 1
         }
@@ -46,7 +46,7 @@
             "operator": "==",
             "value": false
           },
-          "event": "minecraft:default_texture"
+          "event": "mystic:default_texture"
         },
         {
           "filters": {
@@ -55,12 +55,12 @@
             "operator": "==",
             "value": true
           },
-          "event": "minecraft:water_texture"
+          "event": "mystic:water_texture"
         }
       ]
     },
     "events": {
-      "minecraft:water_texture": {
+      "mystic:water_texture": {
         "remove": {
           "component_groups": [
             "minecraft:default_texture"
@@ -72,7 +72,7 @@
           ]
         }
       },
-      "minecraft:default_texture": {
+      "mystic:default_texture": {
         "remove": {
           "component_groups": [
             "minecraft:water_texture"

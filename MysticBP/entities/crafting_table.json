@@ -9,14 +9,14 @@
       "is_experimental": true
     },
     "component_groups": {
-      "solved:die": {
+      "mystic:die": {
         "minecraft:explode": {
           "fuseLength": 0,
           "fuseLit": true,
           "power": 0
         }
       },
-      "solved:shake": {
+      "mystic:shake": {
         "minecraft:is_shaking": {}
       }
     },
@@ -51,7 +51,7 @@
               "subject": "target",
               "value": "minecraft:timer"
             },
-            "event": "solved:on_shake"
+            "event": "mystic:on_shake"
           }
         },
         {
@@ -62,7 +62,7 @@
               "operator": "not",
               "value": "minecraft:timer"
             },
-            "event": "solved:on_remove_shake"
+            "event": "mystic:on_remove_shake"
           }
         }
       ],
@@ -73,7 +73,7 @@
               "subject": "other",
               "value": "player"
             },
-            "event": "solved:on_die"
+            "event": "mystic:on_die"
           },
           "deals_damage": false
         },
@@ -100,25 +100,25 @@
     },
 
     "events": {
-      "solved:on_shake": {
+      "mystic:on_shake": {
         "add": {
           "component_groups": [
-            "solved:shake"
+            "mystic:shake"
           ]
         }
       },
-      "solved:on_remove_shake": {
+      "mystic:on_remove_shake": {
         "remove": {
           "component_groups": [
-            "solved:shake"
+            "mystic:shake"
           ]
         }
       },
 
-      "solved:on_die": {
+      "mystic:on_die": {
         "add": {
           "component_groups": [
-            "solved:die"
+            "mystic:die"
           ]
         }
       }
