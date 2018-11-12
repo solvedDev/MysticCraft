@@ -12,9 +12,11 @@
         "water": "textures/entity/axolotl_water"
       },
       "geometry": {
-        "default": "geometry.mob_axolotl"
+        "default": "geometry.axolotl"
       },
-      "render_controllers": ["controller.render.axolotl"],
+      "render_controllers": [
+        "controller.render.axolotl"
+      ],
       "spawn_egg": {
         "base_color": "#42e5f4",
         "overlay_color": "#278ddb"

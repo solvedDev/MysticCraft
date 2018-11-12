@@ -4,18 +4,27 @@
     "controller.animation.centaur.move": {
       "states": {
         "default": {
-          "parameters": [ "query.walk_speed" ],
+          "parameters": [
+            "query.walk_speed"
+          ],
           "animations": [
-            { "setup": [] },
-            { "attack": [] },
-            { "walk": [
+            {
+              "setup": []
+            },
+            {
+              "attack": []
+            },
+            {
+              "walk": [
                 {
-                  "0.0": 0.0,
-                  "1.0": 1.0
+                  "0.0": 0,
+                  "1.0": 1
                 }
               ]
-			},
-            { "look_at_target": [] }
+            },
+            {
+              "look_at_target": []
+            }
           ]
         }
       }

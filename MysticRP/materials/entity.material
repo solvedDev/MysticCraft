@@ -1,15 +1,18 @@
 {
   "materials": {
-		"version": "1.0.0",
-		
-		"crafting_table:entity": {},
-		"carrage:entity": {},
-		"raven:entity": {},
-		"minotaur:entity": {},
-		"centaur:entity_alphatest": {},
-		"axolotl:entity_alphatest": {},
-		"axolotl_water:entity": {
-	  	"+states": [ "Blending" ]
-		}
+    "version": "1.0.0",
+    "crafting_table:entity": {},
+    "carrage:entity": {},
+	"invocation:entity": {},
+	"siren:entity": {},
+    "raven:entity": {},
+    "minotaur:entity": {},
+    "centaur:entity_alphatest": {},
+    "axolotl:entity_alphatest": {},
+    "axolotl_water:entity": {
+      "+states": [
+        "Blending"
+      ]
+    }
   }
 }

@@ -3,8 +3,14 @@
   "render_controllers": {
     "controller.render.raven": {
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Texture.default" ]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
     }
   }
 }

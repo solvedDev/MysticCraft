@@ -3,8 +3,14 @@
   "render_controllers": {
     "controller.render.carrage": {
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Texture.default" ]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
     }
   }
 }

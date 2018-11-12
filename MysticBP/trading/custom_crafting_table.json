@@ -13,9 +13,9 @@
             }
           ],
           "gives": [
-           {
+            {
               "item": "minecraft:emerald"
-           }
+            }
           ]
         },
         {
@@ -46,7 +46,7 @@
           ],
           "gives": [
             {
-               "item": "minecraft:emerald"
+              "item": "minecraft:emerald"
             }
           ]
         },

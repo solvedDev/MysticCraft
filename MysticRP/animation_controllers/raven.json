@@ -5,8 +5,12 @@
       "states": {
         "default": {
           "animations": [
-            { "look_at_target": [] },
-			{ "wings": [] }
+            {
+              "look_at_target": []
+            },
+            {
+              "wings": []
+            }
           ]
         }
       }
@@ -14,16 +18,18 @@
     "controller.animation.raven.move": {
       "states": {
         "default": {
-          "parameters": [ "query.walk_speed" ],
+          "parameters": [
+            "query.walk_speed"
+          ],
           "animations": [
-		    {
+            {
               "move": [
                 {
-                  "0.0": 0.0,
-                  "1.0": 1.0
+                  "0.0": 0,
+                  "1.0": 1
                 }
               ]
-			}
+            }
           ]
         }
       }

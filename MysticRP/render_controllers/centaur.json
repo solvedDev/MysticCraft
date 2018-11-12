@@ -13,8 +13,14 @@
         }
       },
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Array.variants[query.variant]" ]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.variants[query.variant]"
+      ]
     }
   }
 }

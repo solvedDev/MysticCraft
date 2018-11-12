@@ -11,6 +11,8 @@ item.spawn_egg.entity.mystic:raven.name=Spawn Raven
 item.spawn_egg.entity.mystic:axolotl.name=Spawn Axolotl
 item.spawn_egg.entity.mystic:minotaur.name=Spawn Minotaur
 item.spawn_egg.entity.mystic:centaur.name=Spawn Centaur
+item.spawn_egg.entity.mystic:siren.name=Siren
+item.spawn_egg.entity.mystic:invocation.name=Invocation Table
 
 ## Entities
 
@@ -20,3 +22,5 @@ entity.mystic:raven.name=Raven
 entity.mystic:axolotl.name=Axolotl
 entity.mystic:minotaur.name=Minotaur
 entity.mystic:centaur.name=Centaur
+entity.mystic:siren.name=Siren
+entity.mystic:raven.invocation=Invocation Table

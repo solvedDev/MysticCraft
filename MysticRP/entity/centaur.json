@@ -13,7 +13,14 @@
         "centaur_red": "textures/entity/centaur_red"
       },
       "geometry": {
-        "default": "geometry.mob_centaur"
+        "default": "geometry.centaur"
+      },
+      "render_controllers": [
+        "controller.render.centaur"
+      ],
+      "spawn_egg": {
+        "base_color": "#c9bf72",
+        "overlay_color": "#967646"
       },
       "animations": {
         "setup": "animation.centaur.setup",
@@ -21,19 +28,20 @@
         "attack": "animation.vindicator.attack",
         "look_at_target": "animation.common.look_at_target"
       },
-      "animation_controllers": [{
-        "move": "controller.animation.centaur.move"
-      }],
-      "render_controllers": ["controller.render.centaur"],
+      "animation_controllers": [
+        {
+          "move": "controller.animation.centaur.move"
+        }
+      ],
       "enable_attachables": true,
       "locators": {
         "lead": {
-          "head": [0.0, 18.0, -11.0]
+          "head": [
+            0,
+            18,
+            -11
+          ]
         }
-      },
-      "spawn_egg": {
-        "base_color": "#c9bf72",
-        "overlay_color": "#967646"
       }
     }
   }
