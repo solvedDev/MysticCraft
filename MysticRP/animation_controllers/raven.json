@@ -1,28 +1,30 @@
 {
-  "format_version": "1.8.0-beta.1",
+  "format_version": "1.8.0",
   "animation_controllers": {
     "controller.animation.raven.general": {
       "states": {
         "default": {
-          "animations": {
-            "look_at_target": {},
-			"wings": {}
-          }
+          "animations": [
+            { "look_at_target": [] },
+			{ "wings": [] }
+          ]
         }
       }
     },
     "controller.animation.raven.move": {
       "states": {
         "default": {
-          "parameters": [ "Entity.Member.WalkSpeed" ],
-          "animations": {
-            "move": [
-              {
-                "0.0": 0.0,
-                "1.0": 1.0
-              }
-            ]
-          }
+          "parameters": [ "query.walk_speed" ],
+          "animations": [
+		    {
+              "move": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+			}
+          ]
         }
       }
     }

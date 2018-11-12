@@ -1,18 +1,12 @@
 {
-  "format_version": "1.8.0-beta.1",
+  "format_version": "1.8.0",
   "minecraft:entity": {
 
     "description": {
       "identifier": "mystic:carrage",
-	  "minecraft:spawn_egg": {
-        "value": true
-      },
-      "minecraft:is_summonable": {
-        "value": true
-      },
-      "minecraft:is_experimental": {
-        "value": true
-      }
+	  "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": true
     },
 
     "component_groups": {

@@ -1,17 +1,11 @@
 {
-	"format_version": "1.8.0-beta.1",
+	"format_version": "1.8.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "mystic:crafting_table_internal",
-			"minecraft:spawn_egg": {
-				"value": false
-			},
-			"minecraft:is_summonable": {
-				"value": false
-			},
-			"minecraft:is_experimental": {
-				"value": true
-			}
+			"is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": true
 		},
 		"component_groups": {
 			"solved:die": {
