@@ -73,7 +73,10 @@
 			{
 				"name": "rightItem",
 				"parent": "rightArm",
-				"pivot": [-6, 22, -7]
+				"pivot": [-6, 22, -7],
+				"cubes": [
+					{"origin": [-7, 21, -7], "size": [1, 1, 1], "uv": [0, 0]}
+				]
 			},
 			{
 				"name": "leftArm",
@@ -87,7 +90,10 @@
 			{
 				"name": "leftItem",
 				"parent": "leftArm",
-				"pivot": [6, 22, -7]
+				"pivot": [6, 22, -7],
+				"cubes": [
+					{"origin": [5, 22, -8], "size": [1, 1, 1], "uv": [0, 0]}
+				]
 			}
 		]
 	}
