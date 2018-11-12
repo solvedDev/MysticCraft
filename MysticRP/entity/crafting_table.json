@@ -12,7 +12,7 @@
       "geometry": {
         "default": "geometry.crafting_table"
       },
-      "render_controllers": [ "controller.render.crafting_table" ],
+      "render_controllers": ["controller.render.crafting_table"],
       "spawn_egg": {
         "texture": "mysticcraft_egg",
         "texture_index": 0

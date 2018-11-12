@@ -12,7 +12,7 @@
       "geometry": {
         "default": "geometry.carrage"
       },
-      "render_controllers": [ "controller.render.carrage" ],
+      "render_controllers": ["controller.render.carrage"],
       "spawn_egg": {
         "texture": "mysticcraft_egg",
         "texture_index": 1
