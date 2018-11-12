@@ -3,9 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "mystic:crafting_table",
-      "runtime_identifier": {
-        "id": "minecraft:shulker"
-      },
+      "runtime_identifier": "minecraft:shulker",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": true

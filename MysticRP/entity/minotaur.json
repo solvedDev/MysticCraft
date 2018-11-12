@@ -17,8 +17,8 @@
         "lead": { "head": [0.5, 6, -2.83333] }
       },
       "spawn_egg": {
-        "base_color": "#5c5959",
-        "overlay_color": "#3a3a3a"
+        "base_color": "#59401a",
+        "overlay_color": "#7a3024"
       }
     }
   }
