@@ -7,16 +7,16 @@
 			"bones": {
 				"wing_a": {
 					"rotation": [
-						45,
+						"global.anim_speed * 45",
 						0,
-						"110 + (Math.cos(global.anim_time * 360.0) *  30.0)"
+						"global.anim_speed * (110 + Math.cos(global.anim_time * 360.0) *  30.0)"
 					]
 				},
 				"wing_b": {
 					"rotation": [
-						45,
+						"global.anim_speed * 45",
 						0,
-						"-110 + (-Math.cos(global.anim_time * 360.0) *  30.0)"
+						"global.anim_speed * (-110 + -Math.cos(global.anim_time * 360.0) *  30.0)"
 					]
 				}
 			}
@@ -27,14 +27,14 @@
 			"bones": {
 				"leg_a": {
 					"rotation": [
-						"Math.cos(global.anim_time * 38.17) *  80.0",
+						"global.anim_speed * (Math.cos(global.anim_time * 38.17) *  80.0)",
 						0,
 						0
 					]
 				},
 				"leg_b": {
 					"rotation": [
-						"Math.cos(global.anim_time * 38.17) * -80.0",
+						"global.anim_speed * (Math.cos(global.anim_time * 38.17) * -80.0)",
 						0,
 						0
 					]

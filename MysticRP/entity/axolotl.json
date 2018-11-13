@@ -11,12 +11,31 @@
 				"default": "textures/entity/axolotl/axolotl",
 				"water": "textures/entity/axolotl/axolotl_water"
 			},
+			"animations": {
+				"move": "animation.axolotl.move",
+				"ground_move": "animation.axolotl.ground_move",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.axolotl.move"
+				}
+			],
 			"geometry": {
 				"default": "geometry.axolotl"
 			},
 			"render_controllers": [
 				"controller.render.axolotl"
 			],
+			"locators": {
+				"lead": {
+					"head": [
+						0,
+						2,
+						-8
+					]
+				}
+			},
 			"spawn_egg": {
 				"base_color": "#42e5f4",
 				"overlay_color": "#278ddb"
