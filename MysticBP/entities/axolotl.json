@@ -63,24 +63,24 @@
 			"mystic:water_texture": {
 				"remove": {
 					"component_groups": [
-						"minecraft:default_texture"
+						"mystic:default_texture"
 					]
 				},
 				"add": {
 					"component_groups": [
-						"minecraft:water_texture"
+						"mystic:water_texture"
 					]
 				}
 			},
 			"mystic:default_texture": {
 				"remove": {
 					"component_groups": [
-						"minecraft:water_texture"
+						"mystic:water_texture"
 					]
 				},
 				"add": {
 					"component_groups": [
-						"minecraft:default_texture"
+						"mystic:default_texture"
 					]
 				}
 			}

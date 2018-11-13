@@ -68,8 +68,8 @@
 				]
 			},
 			"minecraft:collision_box": {
-				"height": 2.2,
-				"width": 0.9
+				"height": 2.0,
+				"width": 1.5
 			},
 			"minecraft:breathable": {
 				"totalSupply": 15,
@@ -94,7 +94,7 @@
 			"minecraft:jump.static": {},
 			"minecraft:nameable": {},
 			"minecraft:loot": {
-				"table": "loot_tables/entities/llama.json"
+				"table": "loot_tables/mystic/loot/centaur.json"
 			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
