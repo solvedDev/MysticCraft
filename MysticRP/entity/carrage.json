@@ -1,22 +1,24 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "mystic:carrage",
-      "materials": {
-        "default": "carrage"
-      },
-      "textures": {
-        "default": "textures/entity/carrage"
-      },
-      "geometry": {
-        "default": "geometry.carrage"
-      },
-      "render_controllers": ["controller.render.carrage"],
-      "spawn_egg": {
-        "texture": "mysticcraft_egg",
-        "texture_index": 1
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mystic:carrage",
+			"materials": {
+				"default": "carrage"
+			},
+			"textures": {
+				"default": "textures/entity/carrage"
+			},
+			"geometry": {
+				"default": "geometry.carrage"
+			},
+			"render_controllers": [
+				"controller.render.carrage"
+			],
+			"spawn_egg": {
+				"texture": "mysticcraft_egg",
+				"texture_index": 1
+			}
+		}
+	}
 }

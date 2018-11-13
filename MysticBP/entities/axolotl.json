@@ -1,89 +1,89 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:entity": {
-
-    "description": {
-      "identifier": "mystic:axolotl",
-      "is_spawnable": true,
-      "is_summonable": true,
-      "is_experimental": true
-    },
-
-    "component_groups": {
-      "mystic:default_texture": {
-        "minecraft:variant": {
-          "value": 0
-        }
-      },
-      "mystic:water_texture": {
-        "minecraft:variant": {
-          "value": 1
-        }
-      }
-    },
-
-    "components": {
-      "minecraft:type_family": {
-        "family": ["axolotl"]
-      },
-      "minecraft:loot": {
-        "table": "loot_tables/entities/axolotl.json"
-      },
-      "minecraft:nameable": {},
-      "minecraft:health": {
-        "value": 5,
-        "max": 5
-      },
-      "minecraft:collision_box": {
-        "width": 1.5,
-        "height": 0.75
-      },
-      "minecraft:physics": {},
-      "minecraft:environment_sensor": [{
-          "filters": {
-            "test": "in_water_or_rain",
-            "subject": "self",
-            "operator": "==",
-            "value": false
-          },
-          "event": "mystic:default_texture"
-        },
-        {
-          "filters": {
-            "test": "in_water_or_rain",
-            "subject": "self",
-            "operator": "==",
-            "value": true
-          },
-          "event": "mystic:water_texture"
-        }
-      ]
-    },
-    "events": {
-      "mystic:water_texture": {
-        "remove": {
-          "component_groups": [
-            "minecraft:default_texture"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:water_texture"
-          ]
-        }
-      },
-      "mystic:default_texture": {
-        "remove": {
-          "component_groups": [
-            "minecraft:water_texture"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "minecraft:default_texture"
-          ]
-        }
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mystic:axolotl",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": true
+		},
+		"component_groups": {
+			"mystic:default_texture": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"mystic:water_texture": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"axolotl"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/axolotl.json"
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 5,
+				"max": 5
+			},
+			"minecraft:collision_box": {
+				"width": 1.5,
+				"height": 0.75
+			},
+			"minecraft:physics": {},
+			"minecraft:environment_sensor": [
+				{
+					"filters": {
+						"test": "in_water_or_rain",
+						"subject": "self",
+						"operator": "==",
+						"value": false
+					},
+					"event": "mystic:default_texture"
+				},
+				{
+					"filters": {
+						"test": "in_water_or_rain",
+						"subject": "self",
+						"operator": "==",
+						"value": true
+					},
+					"event": "mystic:water_texture"
+				}
+			]
+		},
+		"events": {
+			"mystic:water_texture": {
+				"remove": {
+					"component_groups": [
+						"minecraft:default_texture"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:water_texture"
+					]
+				}
+			},
+			"mystic:default_texture": {
+				"remove": {
+					"component_groups": [
+						"minecraft:water_texture"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:default_texture"
+					]
+				}
+			}
+		}
+	}
 }

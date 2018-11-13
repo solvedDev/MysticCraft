@@ -1,27 +1,33 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "mystic:minotaur",
-      "materials": {
-        "default": "minotaur"
-      },
-      "textures": {
-        "default": "textures/entity/minotaur"
-      },
-      "geometry": {
-        "default": "geometry.mob_minotaur"
-      },
-      "render_controllers": ["controller.render.minotaur"],
-      "locators": {
-        "lead": {
-          "head": [0.5, 6, -2.83333]
-        }
-      },
-      "spawn_egg": {
-        "base_color": "#59401a",
-        "overlay_color": "#7a3024"
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mystic:minotaur",
+			"materials": {
+				"default": "minotaur"
+			},
+			"textures": {
+				"default": "textures/entity/minotaur"
+			},
+			"geometry": {
+				"default": "geometry.mob_minotaur"
+			},
+			"render_controllers": [
+				"controller.render.minotaur"
+			],
+			"locators": {
+				"lead": {
+					"head": [
+						0.5,
+						6,
+						-2.83333
+					]
+				}
+			},
+			"spawn_egg": {
+				"base_color": "#59401a",
+				"overlay_color": "#7a3024"
+			}
+		}
+	}
 }

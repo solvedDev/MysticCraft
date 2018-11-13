@@ -1,127 +1,135 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:entity": {
-    "description": {
-      "identifier": "mystic:crafting_table",
-      "runtime_identifier": "minecraft:shulker",
-      "is_spawnable": true,
-      "is_summonable": true,
-      "is_experimental": true
-    },
-    "component_groups": {
-      "mystic:die": {
-        "minecraft:explode": {
-          "fuseLength": 0,
-          "fuseLit": true,
-          "power": 0
-        }
-      },
-      "mystic:shake": {
-        "minecraft:is_shaking": {}
-      }
-    },
-
-    "components": {
-      "minecraft:type_family": {
-        "family": ["crafting_table"]
-      },
-      "minecraft:collision_box": {
-        "height": 1.0,
-        "width": 1.0
-      },
-      "minecraft:push_through": {
-        "value": 1.0
-      },
-
-      "minecraft:addrider": {
-        "entity_type": "mystic:crafting_table_internal"
-      },
-      "minecraft:rideable": {
-        "family_types": ["crafting_table_internal"],
-        "pull_in_entities": true,
-        "seat_count": 1,
-        "seats": {
-          "position": [0, 0, 0]
-        }
-      },
-      "minecraft:environment_sensor": [{
-          "on_environment": {
-            "filters": {
-              "test": "has_component",
-              "subject": "target",
-              "value": "minecraft:timer"
-            },
-            "event": "mystic:on_shake"
-          }
-        },
-        {
-          "on_environment": {
-            "filters": {
-              "test": "has_component",
-              "subject": "target",
-              "operator": "not",
-              "value": "minecraft:timer"
-            },
-            "event": "mystic:on_remove_shake"
-          }
-        }
-      ],
-      "minecraft:damage_sensor": [{
-          "on_damage": {
-            "filters": {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
-            },
-            "event": "mystic:on_die"
-          },
-          "deals_damage": false
-        },
-        {
-          "cause": "any",
-          "deals_damage": false
-        }
-      ],
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 0,
-        "within_radius": 1,
-        "reselect_targets": false,
-        "entity_types": [{
-          "filters": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "crafting_table_internal"
-          },
-          "max_dist": 1
-        }],
-        "must_see": false
-      },
-      "minecraft:physics": {}
-    },
-
-    "events": {
-      "mystic:on_shake": {
-        "add": {
-          "component_groups": [
-            "mystic:shake"
-          ]
-        }
-      },
-      "mystic:on_remove_shake": {
-        "remove": {
-          "component_groups": [
-            "mystic:shake"
-          ]
-        }
-      },
-
-      "mystic:on_die": {
-        "add": {
-          "component_groups": [
-            "mystic:die"
-          ]
-        }
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mystic:crafting_table",
+			"runtime_identifier": "minecraft:shulker",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": true
+		},
+		"component_groups": {
+			"mystic:die": {
+				"minecraft:explode": {
+					"fuseLength": 0,
+					"fuseLit": true,
+					"power": 0
+				}
+			},
+			"mystic:shake": {
+				"minecraft:is_shaking": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"crafting_table"
+				]
+			},
+			"minecraft:collision_box": {
+				"height": 1.0,
+				"width": 1.0
+			},
+			"minecraft:push_through": {
+				"value": 1.0
+			},
+			"minecraft:addrider": {
+				"entity_type": "mystic:crafting_table_internal"
+			},
+			"minecraft:rideable": {
+				"family_types": [
+					"crafting_table_internal"
+				],
+				"pull_in_entities": true,
+				"seat_count": 1,
+				"seats": {
+					"position": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"minecraft:environment_sensor": [
+				{
+					"on_environment": {
+						"filters": {
+							"test": "has_component",
+							"subject": "target",
+							"value": "minecraft:timer"
+						},
+						"event": "mystic:on_shake"
+					}
+				},
+				{
+					"on_environment": {
+						"filters": {
+							"test": "has_component",
+							"subject": "target",
+							"operator": "not",
+							"value": "minecraft:timer"
+						},
+						"event": "mystic:on_remove_shake"
+					}
+				}
+			],
+			"minecraft:damage_sensor": [
+				{
+					"on_damage": {
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"event": "mystic:on_die"
+					},
+					"deals_damage": false
+				},
+				{
+					"cause": "any",
+					"deals_damage": false
+				}
+			],
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 0,
+				"within_radius": 1,
+				"reselect_targets": false,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "crafting_table_internal"
+						},
+						"max_dist": 1
+					}
+				],
+				"must_see": false
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"mystic:on_shake": {
+				"add": {
+					"component_groups": [
+						"mystic:shake"
+					]
+				}
+			},
+			"mystic:on_remove_shake": {
+				"remove": {
+					"component_groups": [
+						"mystic:shake"
+					]
+				}
+			},
+			"mystic:on_die": {
+				"add": {
+					"component_groups": [
+						"mystic:die"
+					]
+				}
+			}
+		}
+	}
 }

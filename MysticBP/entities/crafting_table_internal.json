@@ -34,10 +34,11 @@
 				}
 			}
 		},
-
 		"components": {
 			"minecraft:type_family": {
-				"family": ["crafting_table_internal"]
+				"family": [
+					"crafting_table_internal"
+				]
 			},
 			"minecraft:collision_box": {
 				"height": 1.0,
@@ -59,10 +60,12 @@
 					"event": "mystic:on_die"
 				}
 			},
-			"minecraft:damage_sensor": [{
+			"minecraft:damage_sensor": [
+				{
 					"on_damage": {
 						"filters": {
-							"all_of": [{
+							"all_of": [
+								{
 									"test": "is_family",
 									"subject": "other",
 									"value": "player"
@@ -85,7 +88,6 @@
 			],
 			"minecraft:physics": {}
 		},
-
 		"events": {
 			"mystic:on_disable": {
 				"add": {
@@ -111,7 +113,6 @@
 					]
 				}
 			},
-
 			"mystic:on_die": {
 				"add": {
 					"component_groups": [

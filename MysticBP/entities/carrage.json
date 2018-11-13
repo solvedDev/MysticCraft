@@ -1,35 +1,32 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:entity": {
-
-    "description": {
-      "identifier": "mystic:carrage",
-      "is_spawnable": true,
-      "is_summonable": true,
-      "is_experimental": true
-    },
-
-    "component_groups": {
-
-    },
-
-    "components": {
-      "minecraft:type_family": {
-        "family": ["carrage"]
-      },
-      "minecraft:loot": {
-        "table": "loot_tables/entities/carrage.json"
-      },
-      "minecraft:nameable": {},
-      "minecraft:health": {
-        "value": 5,
-        "max": 5
-      },
-      "minecraft:collision_box": {
-        "width": 1.5,
-        "height": 0.75
-      },
-      "minecraft:physics": {}
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mystic:carrage",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": true
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"carrage"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/carrage.json"
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 5,
+				"max": 5
+			},
+			"minecraft:collision_box": {
+				"width": 1.5,
+				"height": 0.75
+			},
+			"minecraft:physics": {}
+		}
+	}
 }

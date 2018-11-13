@@ -1,48 +1,37 @@
 {
-  "format_version": "1.8.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "mystic:centaur",
-      "materials": {
-        "default": "centaur"
-      },
-      "textures": {
-        "centaur_autumn": "textures/entity/centaur_autumn",
-        "centaur_blue": "textures/entity/centaur_blue",
-        "centaur_purple": "textures/entity/centaur_purple",
-        "centaur_red": "textures/entity/centaur_red"
-      },
-      "geometry": {
-        "default": "geometry.centaur"
-      },
-      "render_controllers": [
-        "controller.render.centaur"
-      ],
-      "spawn_egg": {
-        "base_color": "#c9bf72",
-        "overlay_color": "#967646"
-      },
-      "animations": {
-        "setup": "animation.centaur.setup",
-        "walk": "animation.centaur.walk",
-        "attack": "animation.vindicator.attack",
-        "look_at_target": "animation.common.look_at_target"
-      },
-      "animation_controllers": [
-        {
-          "move": "controller.animation.centaur.move"
-        }
-      ],
-      "enable_attachables": true,
-      "locators": {
-        "lead": {
-          "head": [
-            0,
-            18,
-            -11
-          ]
-        }
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mystic:centaur",
+			"materials": {
+				"default": "centaur"
+			},
+			"textures": {
+				"centaur_autumn": "textures/entity/centaur/centaur_autumn",
+				"centaur_blue": "textures/entity/centaur/centaur_blue",
+				"centaur_purple": "textures/entity/centaur/centaur_purple",
+				"centaur_red": "textures/entity/centaur/centaur_red"
+			},
+			"geometry": {
+				"default": "geometry.centaur"
+			},
+			"render_controllers": [
+				"controller.render.centaur"
+			],
+			"spawn_egg": {
+				"base_color": "#c9bf72",
+				"overlay_color": "#967646"
+			},
+			"enable_attachables": true,
+			"locators": {
+				"lead": {
+					"head": [
+						0,
+						32,
+						-8.8
+					]
+				}
+			}
+		}
+	}
 }
