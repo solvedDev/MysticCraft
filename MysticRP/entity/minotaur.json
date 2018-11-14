@@ -10,17 +10,32 @@
 				"default": "textures/entity/minotaur"
 			},
 			"geometry": {
-				"default": "geometry.mob_minotaur"
+				"default": "geometry.minotaur"
 			},
+			"animations": {
+				"move": "animation.minotaur.move",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"default": "controller.animation.minotaur.default"
+				}
+			],
 			"render_controllers": [
 				"controller.render.minotaur"
 			],
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(global.anim_pos * 38.17) * global.anim_speed) * 57.3;",
+					"variable.tcos1 = -variable.tcos0;"
+				]
+			},
 			"locators": {
 				"lead": {
 					"head": [
-						0.5,
-						6,
-						-2.83333
+						0,
+						28,
+						-0.33333
 					]
 				}
 			},

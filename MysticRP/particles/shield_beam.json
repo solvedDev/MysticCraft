@@ -25,9 +25,9 @@
 				},
 				"minecraft:particle_motion_parametric": {
 					"relative_position": [
-						"Math.cos((variable.ParticleAge * (variable.ParticleAge * 360)) + (variable.ParticleRandom1 * 360)) * 0.1",
+						"Math.cos((variable.ParticleAge / (variable.ParticleAge * 360)) + (variable.ParticleRandom1 * 360)) * 0.1",
 						"0.6 + variable.ParticleAge * 8",
-						"Math.sin((variable.ParticleAge * (variable.ParticleAge * 360)) + (variable.ParticleRandom1 * 360)) * 0.1"
+						"Math.sin((variable.ParticleAge / (variable.ParticleAge * 360)) + (variable.ParticleRandom1 * 360)) * 0.1"
 					]
 				},
 				"minecraft:particle_appearance_billboard": {
