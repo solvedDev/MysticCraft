@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mystic:forcefield",
+			"materials": {
+				"default": "forcefield"
+			},
+			"textures": {
+				"default": "textures/entity/forcefield/forcefield"
+			},
+			"geometry": {
+				"default": "geometry.forcefield"
+			},
+			"render_controllers": [
+				"controller.render.forcefield"
+			],
+			"particle_effects": {
+				"shield_beam": "mystic:shield_beam",
+				"shield_sphere": "mystic:shield_sphere"
+			},
+			"spawn_egg": {
+				"texture": "mysticcraft_egg",
+				"texture_index": 3
+			}
+		}
+	}
+}

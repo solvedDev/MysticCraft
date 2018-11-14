@@ -13,6 +13,7 @@ item.spawn_egg.entity.mystic:minotaur.name=Spawn Minotaur
 item.spawn_egg.entity.mystic:centaur.name=Spawn Centaur
 item.spawn_egg.entity.mystic:siren.name=Siren
 item.spawn_egg.entity.mystic:invocation.name=Invocation Table
+item.spawn_egg.entity.mystic:forcefield.name=Force Field Block
 
 ## Entities
 
@@ -24,3 +25,4 @@ entity.mystic:minotaur.name=Minotaur
 entity.mystic:centaur.name=Centaur
 entity.mystic:siren.name=Siren
 entity.mystic:raven.invocation=Invocation Table
+entity.mystic:raven.forcefield=Force Field

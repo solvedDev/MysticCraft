@@ -7,6 +7,7 @@
 		"siren:entity": {},
 		"raven:entity": {},
 		"minotaur:entity": {},
+		"forcefield:entity": {},
 		"centaur:entity_alphatest": {},
 		"axolotl:entity_alphatest": {},
 		"axolotl_water:entity": {
