@@ -26,3 +26,8 @@ entity.mystic:centaur.name=Centaur
 entity.mystic:siren.name=Siren
 entity.mystic:raven.invocation=Invocation Table
 entity.mystic:raven.forcefield=Force Field
+
+## Interface and UI
+
+mystic.interact.deactivate=Deactivate
+mystic.interact.activate=Activate

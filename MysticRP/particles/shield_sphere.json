@@ -11,7 +11,7 @@
 					"num_particles": 10000
 				},
 				"minecraft:emitter_lifetime_expression": {
-					"activation_expression": "query.is_shaking",
+					"activation_expression": "query.is_shaking && query.variant == 1",
 					"expiration_expression": 0
 				},
 				"minecraft:emitter_shape_sphere": {
