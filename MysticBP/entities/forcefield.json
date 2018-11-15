@@ -28,13 +28,38 @@
 			},
 			"mystic:powered": {
 				"minecraft:is_shaking": {},
-				"minecraft:behavior.melee_attack": {
-					"priority": 0,
-					"target_dist": 16,
-					"track_target": true
+				"minecraft:behavior.ranged_attack": {
+					"attack_interval": 1,
+					"attack_radius": 16
 				},
-				"minecraft:attack": {
-					"damage": 10
+				"minecraft:shooter": {
+					"def": "mystic:forcefield_attack"
+				},
+				"minecraft:movement": {
+					"value": 0.0
+				},
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 2
+				},
+				"minecraft:navigation.walk": {
+					"can_float": false,
+					"avoid_water": true,
+					"avoid_damage_blocks": true
+				},
+				"minecraft:movement.basic": {},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "monster"
+							}
+						}
+					],
+					"reselect_targets": true,
+					"scan_interval": 1
 				}
 			},
 			"mystic:pre_die": {
@@ -58,21 +83,6 @@
 			"minecraft:collision_box": {
 				"height": 0.5,
 				"width": 1
-			},
-			"minecraft:behavior.nearest_attackable_target": {
-				"priority": 1,
-				"reselect_targets": true,
-				"entity_types": [
-					{
-						"filters": {
-							"test": "is_family",
-							"subject": "other",
-							"value": "monster"
-						},
-						"max_dist": 16
-					}
-				],
-				"must_see": false
 			},
 			"minecraft:interact": [
 				{

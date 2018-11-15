@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mystic:forcefield_attack",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": true,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"components": {
+			"minecraft:projectile": {
+				"onHit": {
+					"impact_damage": {
+						"damage": 10,
+						"knockback": true,
+						"destroyonhit": true
+					}
+				},
+				"power": 3.0,
+				"gravity": 0.0,
+				"anchor": 1
+			}
+		}
+	}
+}
