@@ -16,15 +16,39 @@
 				"default": "geometry.centaur"
 			},
 			"animations": {
-				"setup": "animation.centaur.setup",
         		"walk": "animation.centaur.walk",
-        		"attack": "animation.vindicator.attack",
-        		"look_at_target": "animation.common.look_at_target"
+				"humanoid_base_pose": "animation.humanoid.base_pose",
+        		"look_at_target_default": "animation.humanoid.look_at_target.default",
+        		"move": "animation.humanoid.move",
+        		"holding": "animation.humanoid.holding",
+        		"brandish_spear": "animation.humanoid.brandish_spear",
+        		"charging": "animation.humanoid.charging",
+        		"attack.positions": "animation.humanoid.attack.positions",
+        		"attack.rotations": "animation.humanoid.attack.rotations",
+        		"sneaking": "animation.humanoid.sneaking",
+        		"bob": "animation.humanoid.bob",
+        		"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+        		"bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        		"swimming": "animation.humanoid.swimming",
+        		"use_item_progress": "animation.humanoid.use_item_progress",
+        		"skeleton_attack": "animation.skeleton.attack"
 			},
 			"animation_controllers": [
-				{
-					"default": "controller.animation.centaur.default"
-				}
+				{ "default": "controller.animation.centaur.default" },
+
+				{ "humanoid_base_pose": "controller.animation.humanoid.base_pose" },
+				{ "look_at_target": "controller.animation.humanoid.look_at_target" },
+				{ "holding": "controller.animation.humanoid.holding" },
+				{ "brandish_spear": "controller.animation.humanoid.brandish_spear" },
+				{ "charging": "controller.animation.humanoid.charging" },
+				{ "attack": "controller.animation.humanoid.attack" },
+				{ "sneaking": "controller.animation.humanoid.sneaking" },
+				{ "bob": "controller.animation.humanoid.bob" },
+				{ "damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs" },
+				{ "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow" },
+				{ "swimming": "controller.animation.humanoid.swimming" },
+				{ "use_item_progress": "controller.animation.humanoid.use_item_progress" },
+				{ "skeleton_attack": "controller.animation.skeleton.attack" }
 			],
 			"render_controllers": [
 				"controller.render.centaur"

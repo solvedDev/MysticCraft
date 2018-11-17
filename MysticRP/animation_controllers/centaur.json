@@ -7,7 +7,6 @@
           "parameters": [ "query.walk_speed" ],
           "animations": [
             { "setup": [] },
-            { "attack": [] },
             { "walk": [
                 {
                   "0.0": 0.0,
