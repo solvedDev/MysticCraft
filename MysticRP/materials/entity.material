@@ -7,7 +7,11 @@
 		"siren:entity_alphatest": {},
 		"raven:entity": {},
 		"minotaur:entity": {},
-		"forcefield:entity_alphatest": {},
+		"forcefield:entity_alphatest": {
+			"+states": [
+				"Blending"
+			]
+		},
 		"centaur:entity_alphatest": {},
 		"axolotl:entity_alphatest": {},
 		"axolotl_water:entity": {
