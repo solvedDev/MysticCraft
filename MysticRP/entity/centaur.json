@@ -15,6 +15,17 @@
 			"geometry": {
 				"default": "geometry.centaur"
 			},
+			"animations": {
+				"setup": "animation.centaur.setup",
+        		"walk": "animation.centaur.walk",
+        		"attack": "animation.vindicator.attack",
+        		"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"default": "controller.animation.centaur.default"
+				}
+			],
 			"render_controllers": [
 				"controller.render.centaur"
 			],
