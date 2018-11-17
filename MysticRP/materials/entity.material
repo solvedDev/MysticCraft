@@ -4,10 +4,10 @@
 		"crafting_table:entity": {},
 		"carrage:entity": {},
 		"invocation:entity": {},
-		"siren:entity": {},
+		"siren:entity_alphatest": {},
 		"raven:entity": {},
 		"minotaur:entity": {},
-		"forcefield:entity": {},
+		"forcefield:entity_alphatest": {},
 		"centaur:entity_alphatest": {},
 		"axolotl:entity_alphatest": {},
 		"axolotl_water:entity": {

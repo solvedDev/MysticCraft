@@ -3,6 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "mystic:crafting_table_internal",
+			"runtime_identifier": "minecraft:villager",
 			"is_spawnable": false,
 			"is_summonable": false,
 			"is_experimental": true
@@ -44,9 +45,9 @@
 				"height": 1.0,
 				"width": 1.0
 			},
-			"minecraft:trade_table": {
-				"display_name": "entity.mysticcraft.customcrafting",
-				"table": "trading/custom_crafting_table.json"
+			"//minecraft:trade_table": {
+				"display_name": "entity.villager.crafting_table",
+				"table": "trading/crafting_table_trades.json"
 			},
 			"minecraft:behavior.trade_with_player": {
 				"priority": 1
@@ -73,7 +74,7 @@
 								{
 									"test": "has_component",
 									"operator": "not",
-									"value": "minecraft:behavior.send_event"
+									"value": "minecraft:timer"
 								}
 							]
 						},
