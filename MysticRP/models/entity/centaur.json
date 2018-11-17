@@ -44,7 +44,7 @@
 			},
 			{
 				"name": "head",
-				"pivot": [0, 32, -8.8],
+				"pivot": [0, 33.5, -6.8],
 				"reset": true,
 				"cubes": [
 					{"origin": [-4, 33, -11], "size": [8, 10, 8], "uv": [0, 28], "inflate": 0.25},
