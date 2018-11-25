@@ -8,24 +8,24 @@
 						{
 							"attach_off": []
 						}
-					]/*,
+					],
 					"transitions": [
 						{
-							"attach_on": ""  //UNFINISHED
+							"attach_on": "variable.has_target == 1"
 						}
-					]*/
+					]
 				},
 				"attach_on": {
 					"animations": [
 						{
 							"attach_on": []
 						}
-					]/*,
+					],
 					"transitions": [
 						{
-							"default": "" //UNFINISHED
+							"default": "variable.has_target == 0"
 						}
-					]*/
+					]
 				}
 			}
 		},
