@@ -7,13 +7,102 @@
 			"is_summonable": true,
 			"is_experimental": true
 		},
-		"component_groups": {},
+		"component_groups": {
+			"mystic:chested": {
+				"minecraft:is_chested": {},
+				"minecraft:inventory": {
+					"container_type": "minecart_chest",
+					"inventory_size": 27
+				},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"interact_text": "mystic.interact.ride.carrage",
+					"rider_can_interact": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.5,
+								0.1
+							],
+							"min_rider_count": 0,
+							"max_rider_count": 1
+						}
+					]
+				}
+			},
+			"mystic:unchested": {
+				"minecraft:inventory": {
+					"container_type": "minecart_hopper"
+				},
+				"minecraft:rideable": {
+					"seat_count": 2,
+					"interact_text": "mystic.interact.ride.carrage",
+					"rider_can_interact": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.5,
+								0.1
+							],
+							"min_rider_count": 1,
+							"max_rider_count": 2
+						},
+						{
+							"position": [
+								0,
+								0.5,
+								-0.7
+							],
+							"min_rider_count": 1,
+							"max_rider_count": 2
+						}
+					]
+				}
+			}
+		},
 		"components": {
 			"minecraft:type_family": {
 				"family": [
 					"carrage"
 				]
 			},
+			"minecraft:is_stackable": {
+				"value": true
+			},
+			"minecraft:interact": [
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "has_equipment",
+									"domain": "hand",
+									"subject": "other",
+									"value": "chest"
+								},
+								{
+									"test": "has_component",
+									"operator": "not",
+									"value": "minecraft:is_chested"
+								}
+							]
+						},
+						"event": "mystic:on_chest",
+						"target": "self"
+					},
+					"use_item": true,
+					"swing": true,
+					"play_sounds": "saddle",
+					"interact_text": "mystic.interact.equipchest"
+				}
+			],
 			"minecraft:loot": {
 				"table": "loot_tables/entities/carrage.json"
 			},
@@ -27,6 +116,27 @@
 				"height": 0.75
 			},
 			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"mystic:unchested"
+					]
+				}
+			},
+			"mystic:on_chest": {
+				"remove": {
+					"component_groups": [
+						"mystic:unchested"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"mystic:chested"
+					]
+				}
+			}
 		}
 	}
 }

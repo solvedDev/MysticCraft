@@ -10,8 +10,22 @@
 				"default": "textures/entity/carrage"
 			},
 			"geometry": {
-				"default": "geometry.carrage"
+				"unchested": "geometry.carrage_unchested",
+				"chested": "geometry.carrage_chested"
 			},
+			"animations": {
+				"attach_off": "animation.carrage.attach_off",
+				"attach_on": "animation.carrage.attach_on",
+				"wheels": "animation.carrage.wheels"
+			},
+			"animation_controllers": [
+				{
+					"attach": "controller.animation.carrage.attach"
+				},
+				{
+					"wheels": "controller.animation.carrage.wheels"
+				}
+			],
 			"render_controllers": [
 				"controller.render.carrage"
 			],

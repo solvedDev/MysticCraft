@@ -31,3 +31,5 @@ entity.mystic:raven.forcefield=Force Field
 
 mystic.interact.deactivate=Deactivate
 mystic.interact.activate=Activate
+mystic.interact.equipchest=Equip Chest
+mystic.interact.ride.carrage=Board Carrage
