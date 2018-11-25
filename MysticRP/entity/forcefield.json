@@ -19,16 +19,19 @@
 			"animations": {
 				"item": "animation.forcefield.item"
 			},
-			"animation_controllers": [
-				{
-					"general": "controller.animation.forcefield.general"
-				}
-			],
 			"particle_effects": {
 				"shield_beam": "mystic:shield_beam",
 				"shield_sphere": "mystic:shield_sphere",
 				"shield_top": "mystic:shield_top"
 			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.forcefield.general"
+				},
+				{
+					"particles": "controller.animation.forcefield.particles"
+				}
+			],
 			"spawn_egg": {
 				"texture": "mysticcraft_egg",
 				"texture_index": 3

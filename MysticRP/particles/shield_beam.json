@@ -12,14 +12,19 @@
 					"max_particles": 250
 				},
 				"minecraft:emitter_local_space": {
-					"position": true,
-					"rotation": true
+					"position": true
 				},
 				"minecraft:emitter_lifetime_expression": {
-					"activation_expression": "query.is_shaking && query.variant == 1",
+					"activation_expression": 1,
 					"expiration_expression": 0
 				},
-				"minecraft:emitter_shape_point": {},
+				"minecraft:emitter_shape_point": {
+					"direction": [
+						"variable.direction.x",
+						"variable.direction.y",
+						"variable.direction.z"
+					]
+				},
 				"minecraft:particle_lifetime_expression": {
 					"max_lifetime": 2.15
 				},
