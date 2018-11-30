@@ -7,7 +7,23 @@
 				"default": "carrage"
 			},
 			"textures": {
-				"white": "textures/entity/carrage/carrage_white"
+				"undyed": "textures/entity/carrage/carrage_undyed",
+				"white": "textures/entity/carrage/carrage_white",
+				"orange": "textures/entity/carrage/carrage_orange",
+				"magenta": "textures/entity/carrage/carrage_magenta",
+				"light_blue": "textures/entity/carrage/carrage_light_blue",
+				"yellow": "textures/entity/carrage/carrage_yellow",
+				"lime": "textures/entity/carrage/carrage_lime",
+				"pink": "textures/entity/carrage/carrage_pink",
+				"gray": "textures/entity/carrage/carrage_gray",
+				"silver": "textures/entity/carrage/carrage_silver",
+				"cyan": "textures/entity/carrage/carrage_cyan",
+				"purple": "textures/entity/carrage/carrage_purple",
+				"blue": "textures/entity/carrage/carrage_blue",
+				"brown": "textures/entity/carrage/carrage_brown",
+				"green": "textures/entity/carrage/carrage_green",
+				"red": "textures/entity/carrage/carrage_red",
+				"black": "textures/entity/carrage/carrage_black"
 			},
 			"geometry": {
 				"unchested": "geometry.carrage_unchested",

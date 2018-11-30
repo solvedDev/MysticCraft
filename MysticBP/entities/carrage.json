@@ -8,6 +8,91 @@
 			"is_experimental": true
 		},
 		"component_groups": {
+			"mystic:carrage_purple": {
+				"minecraft:variant": {
+					"value": 6
+				}
+			},
+			"mystic:carrage_black": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"mystic:carrage_blue": {
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"mystic:carrage_brown": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"mystic:carrage_cyan": {
+				"minecraft:variant": {
+					"value": 7
+				}
+			},
+			"mystic:carrage_gray": {
+				"minecraft:variant": {
+					"value": 9
+				}
+			},
+			"mystic:carrage_green": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"mystic:carrage_light_blue": {
+				"minecraft:variant": {
+					"value": 13
+				}
+			},
+			"mystic:carrage_lime": {
+				"minecraft:variant": {
+					"value": 11
+				}
+			},
+			"mystic:carrage_magenta": {
+				"minecraft:variant": {
+					"value": 14
+				}
+			},
+			"mystic:carrage_orange": {
+				"minecraft:variant": {
+					"value": 15
+				}
+			},
+			"mystic:carrage_pink": {
+				"minecraft:variant": {
+					"value": 10
+				}
+			},
+			"mystic:carrage_red": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"mystic:carrage_silver": {
+				"minecraft:variant": {
+					"value": 8
+				}
+			},
+			"mystic:carrage_undyed": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"mystic:carrage_white": {
+				"minecraft:variant": {
+					"value": 16
+				}
+			},
+			"mystic:carrage_yellow": {
+				"minecraft:variant": {
+					"value": 12
+				}
+			},
 			"mystic:chested": {
 				"minecraft:is_chested": {},
 				"minecraft:inventory": {
@@ -152,6 +237,438 @@
 					"swing": true,
 					"play_sounds": "saddle",
 					"interact_text": "mystic.interact.equipchest"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:0"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 16
+								}
+							]
+						},
+						"event": "mystic:turn_white"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:1"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 15
+								}
+							]
+						},
+						"event": "mystic:turn_orange"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:2"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 14
+								}
+							]
+						},
+						"event": "mystic:turn_magenta"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:3"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 5
+								}
+							]
+						},
+						"event": "mystic:turn_light_blue"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:4"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 12
+								}
+							]
+						},
+						"event": "mystic:turn_yellow"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:5"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 11
+								}
+							]
+						},
+						"event": "mystic:turn_lime"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:6"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 10
+								}
+							]
+						},
+						"event": "mystic:turn_pink"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:7"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 9
+								}
+							]
+						},
+						"event": "mystic:turn_gray"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:8"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 8
+								}
+							]
+						},
+						"event": "mystic:turn_silver"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:9"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 7
+								}
+							]
+						},
+						"event": "mystic:turn_cyan"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:10"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 6
+								}
+							]
+						},
+						"event": "mystic:turn_purple"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:11"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 5
+								}
+							]
+						},
+						"event": "mystic:turn_blue"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:12"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 4
+								}
+							]
+						},
+						"event": "mystic:turn_brown"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:13"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 3
+								}
+							]
+						},
+						"event": "mystic:turn_green"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:14"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 2
+								}
+							]
+						},
+						"event": "mystic:turn_red"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "carpet:15"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_variant",
+									"operator": "not",
+									"value": 1
+								}
+							]
+						},
+						"event": "mystic:turn_black"
+					},
+					"use_item": true,
+					"interact_text": "mystic.interact.dye"
 				}
 			],
 			"minecraft:loot": {
@@ -172,7 +689,8 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"mystic:unchested"
+						"mystic:unchested",
+						"mystic:carrage_undyed"
 					]
 				}
 			},
@@ -185,6 +703,118 @@
 				"add": {
 					"component_groups": [
 						"mystic:chested"
+					]
+				}
+			},
+			"mystic:turn_purple": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_purple"
+					]
+				}
+			},
+			"mystic:turn_black": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_black"
+					]
+				}
+			},
+			"mystic:turn_blue": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_blue"
+					]
+				}
+			},
+			"mystic:turn_brown": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_brown"
+					]
+				}
+			},
+			"mystic:turn_cyan": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_cyan"
+					]
+				}
+			},
+			"mystic:turn_gray": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_gray"
+					]
+				}
+			},
+			"mystic:turn_green": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_green"
+					]
+				}
+			},
+			"mystic:turn_light_blue": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_light_blue"
+					]
+				}
+			},
+			"mystic:turn_lime": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_lime"
+					]
+				}
+			},
+			"mystic:turn_magenta": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_magenta"
+					]
+				}
+			},
+			"mystic:turn_orange": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_orange"
+					]
+				}
+			},
+			"mystic:turn_pink": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_pink"
+					]
+				}
+			},
+			"mystic:turn_red": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_red"
+					]
+				}
+			},
+			"mystic:turn_silver": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_silver"
+					]
+				}
+			},
+			"mystic:turn_white": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_white"
+					]
+				}
+			},
+			"mystic:turn_yellow": {
+				"add": {
+					"component_groups": [
+						"mystic:carrage_yellow"
 					]
 				}
 			}
