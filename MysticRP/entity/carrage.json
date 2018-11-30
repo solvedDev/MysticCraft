@@ -7,7 +7,7 @@
 				"default": "carrage"
 			},
 			"textures": {
-				"default": "textures/entity/carrage"
+				"white": "textures/entity/carrage/carrage_white"
 			},
 			"geometry": {
 				"unchested": "geometry.carrage_unchested",
