@@ -24,6 +24,15 @@
 				8,
 				0
 			]
+		},
+		{
+			"type": "client_data",
+			"uuid": "c8542444-f8ba-11e8-8eb2-f2801f1b9fd1",
+			"version": [
+				1,
+				8,
+				0
+			]
 		}
 	],
 	"dependencies": [
