@@ -13,7 +13,6 @@
 			]
 		},
 		"centaur:entity_alphatest": {},
-		"werewolf:entity": {},
 		"axolotl:entity_alphatest": {},
 		"axolotl_water:entity": {
 			"+states": [
