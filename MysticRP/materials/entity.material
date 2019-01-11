@@ -7,6 +7,7 @@
 		"siren:entity_alphatest": {},
 		"raven:entity": {},
 		"minotaur:entity": {},
+		"syclop:entity": {},
 		"forcefield:entity_alphatest": {
 			"+states": [
 				"Blending"

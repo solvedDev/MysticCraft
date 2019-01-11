@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mystic:syclop",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "syclop"
+      },
+      "textures": {
+        "default": "textures/entity/syclop"
+      },
+      "geometry": {
+        "default": "geometry.syclop"
+      },
+      "scripts": {
+        "pre_animation": [
+        ]
+      },
+      "animations": {
+      },
+      "animation_controllers": [
+      ],
+      "render_controllers": [ "controller.render.syclop" ],
+      "enable_attachables": true,
+	  "spawn_egg": {
+		"base_color": "#CBCAB2",
+		"overlay_color": "#A79C8B"
+	  }
+    }
+  }
+}

@@ -12,7 +12,12 @@ system.update = function () {
         let size = allEntities.length;
         for (let index = 0; index < size; ++index) {
 			if (allEntities[index].__identifier__ === "mystic:forcefield") {
-				this.broadcastEvent("minecraft:display_chat_event", "Found Forcefield");
+				if (this.hasComponent(allEntities[index], "minecraft:is_shaking")) {
+                    let checkActivated = this.getComponent(allEntities[index], "minecraft:variant");
+					if (checkActivated.value === 1) {
+						this.broadcastEvent("minecraft:display_chat_event", "Found Forcefield");
+					}
+                }
             }
         }
         global.tick = 0;
