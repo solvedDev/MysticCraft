@@ -26,40 +26,15 @@
 					"value": 1
 				}
 			},
+			"mystic:unpowered": {
+				"minecraft:health": {
+					"max": 25
+				}
+			},
 			"mystic:powered": {
 				"minecraft:is_shaking": {},
-				"minecraft:behavior.ranged_attack": {
-					"attack_interval": 1,
-					"attack_radius": 16
-				},
-				"minecraft:shooter": {
-					"def": "mystic:forcefield_attack"
-				},
-				"minecraft:movement": {
-					"value": 0.0
-				},
-				"minecraft:behavior.hurt_by_target": {
-					"priority": 2
-				},
-				"minecraft:navigation.walk": {
-					"can_float": false,
-					"avoid_water": true,
-					"avoid_damage_blocks": true
-				},
-				"minecraft:movement.basic": {},
-				"minecraft:behavior.nearest_attackable_target": {
-					"priority": 1,
-					"entity_types": [
-						{
-							"filters": {
-								"test": "is_family",
-								"subject": "other",
-								"value": "monster"
-							}
-						}
-					],
-					"reselect_targets": true,
-					"scan_interval": 1
+				"minecraft:health": {
+					"max": 50
 				}
 			},
 			"mystic:pre_die": {
@@ -240,7 +215,8 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"mystic:deactivated"
+						"mystic:deactivated",
+						"mystic:unpowered"
 					]
 				}
 			},
@@ -287,11 +263,17 @@
 				},
 				"add": {
 					"component_groups": [
-						"mystic:deactivated"
+						"mystic:deactivated",
+						"mystic:unpowered"
 					]
 				}
 			},
 			"mystic:power_on": {
+				"remove": {
+					"component_groups": [
+						"mystic:unpowered"
+					]
+				},
 				"add": {
 					"component_groups": [
 						"mystic:powered"
@@ -302,6 +284,11 @@
 				"remove": {
 					"component_groups": [
 						"mystic:powered"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"mystic:unpowered"
 					]
 				}
 			}
