@@ -7,6 +7,22 @@
       "is_summonable": true,
       "is_experimental": true
     },
+
+    "component_groups": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcastAnger": true,
+          "broadcastRange": 20,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+      },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+    },
     "components": {
       "minecraft:nameable": {
       },
