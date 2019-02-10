@@ -24,21 +24,12 @@
 			"render_controllers": [
 				"controller.render.minotaur"
 			],
-			"scripts": {
-				"pre_animation": [
-					"variable.tcos0 = (Math.cos(global.anim_pos * 38.17) * global.anim_speed) * 57.3;",
-					"variable.tcos1 = -variable.tcos0;"
-				]
-			},
-			"locators": {
-				"lead": {
-					"head": [
-						0,
-						28,
-						-0.33333
-					]
-				}
-			},
+			// "scripts": {
+			// 	"pre_animation": [
+			// 		"variable.tcos0 = (Math.cos(global.anim_pos * 38.17) * global.anim_speed) * 57.3;",
+			// 		"variable.tcos1 = -variable.tcos0;"
+			// 	]
+			// },
 			"spawn_egg": {
 				"base_color": "#59401a",
 				"overlay_color": "#7a3024"

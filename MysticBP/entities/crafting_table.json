@@ -9,15 +9,38 @@
 			"is_experimental": true
 		},
 		"component_groups": {
+			"mystic:disabled": {
+				"minecraft:is_shaking": {},
+				"minecraft:timer": {
+					"looping": false,
+					"randomInterval": false,
+					"time": 2,
+					"time_down_event": {
+						"event": "mystic:on_remove_disabled"
+					}
+				}
+			},
 			"mystic:die": {
+				"minecraft:equipment": {
+					"table": "spawn_egg_drops/crafting_table.json"
+				},
 				"minecraft:explode": {
 					"fuseLength": 0,
 					"fuseLit": true,
 					"power": 0
 				}
 			},
-			"mystic:shake": {
-				"minecraft:is_shaking": {}
+			"mystic:prepare_die": {
+				"minecraft:equipment": {
+					"table": "spawn_egg_drops/crafting_table.json"
+				},
+				"minecraft:transformation": {
+					"delay": {
+						"value": 0
+					},
+					"drop_equipment": true,
+					"into": "mystic:crafting_table"
+				}
 			}
 		},
 		"components": {
@@ -33,47 +56,36 @@
 			"minecraft:push_through": {
 				"value": 1.0
 			},
-			"minecraft:addrider": {
-				"entity_type": "mystic:crafting_table_internal"
+			"minecraft:behavior.trade_with_player": {
+				"priority": 1
 			},
-			"minecraft:rideable": {
-				"family_types": [
-					"crafting_table_internal"
-				],
-				"pull_in_entities": true,
-				"seat_count": 1,
-				"seats": {
-					"position": [
-						0,
-						0,
-						0
-					]
-				}
+			"minecraft:navigation.generic": {},
+			"minecraft:movement": { "value": 0 },
+			"minecraft:trade_table": {
+				"display_name": "entity.villager.crafting_table",
+				"table": "trading/crafting_table.json"
 			},
-			"minecraft:environment_sensor": [
-				{
-					"on_environment": {
-						"filters": {
-							"test": "has_component",
-							"subject": "target",
-							"value": "minecraft:timer"
-						},
-						"event": "mystic:on_shake"
-					}
-				},
-				{
-					"on_environment": {
-						"filters": {
-							"test": "has_component",
-							"subject": "target",
-							"operator": "not",
-							"value": "minecraft:timer"
-						},
-						"event": "mystic:on_remove_shake"
-					}
-				}
-			],
 			"minecraft:damage_sensor": [
+				{
+					"on_damage": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "has_component",
+									"operator": "not",
+									"value": "minecraft:timer"
+								}
+							]
+						},
+						"event": "mystic:on_disable"
+					},
+					"deals_damage": false
+				},
 				{
 					"on_damage": {
 						"filters": {
@@ -81,7 +93,7 @@
 							"subject": "other",
 							"value": "player"
 						},
-						"event": "mystic:on_die"
+						"event": "mystic:on_prepare_die"
 					},
 					"deals_damage": false
 				},
@@ -90,36 +102,13 @@
 					"deals_damage": false
 				}
 			],
-			"minecraft:behavior.nearest_attackable_target": {
-				"priority": 0,
-				"within_radius": 1,
-				"reselect_targets": false,
-				"entity_types": [
-					{
-						"filters": {
-							"test": "is_family",
-							"subject": "other",
-							"value": "crafting_table_internal"
-						},
-						"max_dist": 1
-					}
-				],
-				"must_see": false
-			},
 			"minecraft:physics": {}
 		},
 		"events": {
-			"mystic:on_shake": {
+			"minecraft:entity_transformed": {
 				"add": {
 					"component_groups": [
-						"mystic:shake"
-					]
-				}
-			},
-			"mystic:on_remove_shake": {
-				"remove": {
-					"component_groups": [
-						"mystic:shake"
+						"mystic:die"
 					]
 				}
 			},
@@ -127,6 +116,37 @@
 				"add": {
 					"component_groups": [
 						"mystic:die"
+					]
+				}
+			},
+			"mystic:on_prepare_die": {
+				"add": {
+					"component_groups": [
+						"mystic:prepare_die"
+					]
+				}
+			},
+			"mystic:on_disable": {
+				"add": {
+					"component_groups": [
+						"mystic:disabled"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"mystic:enabled"
+					]
+				}
+			},
+			"mystic:on_remove_disabled": {
+				"add": {
+					"component_groups": [
+						"mystic:enabled"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"mystic:disabled"
 					]
 				}
 			}

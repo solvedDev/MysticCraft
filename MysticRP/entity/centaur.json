@@ -57,16 +57,7 @@
 				"base_color": "#c9bf72",
 				"overlay_color": "#967646"
 			},
-			"enable_attachables": true,
-			"locators": {
-				"lead": {
-					"head": [
-						0,
-						32,
-						-8.8
-					]
-				}
-			}
+			"enable_attachables": true
 		}
 	}
 }

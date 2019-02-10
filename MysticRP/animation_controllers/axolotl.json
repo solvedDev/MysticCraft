@@ -1,5 +1,5 @@
 {
-	"format_version": "1.8.0",
+	"format_version": "1.10.0",
 	"animation_controllers": {
 		"controller.animation.axolotl.move": {
 			"states": {
@@ -19,7 +19,7 @@
 					]
 				},
 				"swimming": {
-					"parameters": [
+					"variables": [
 						"query.walk_speed"
 					],
 					"animations": [
@@ -37,7 +37,7 @@
 					]
 				},
 				"walking": {
-					"parameters": [
+					"variables": [
 						"query.walk_speed"
 					],
 					"animations": [
